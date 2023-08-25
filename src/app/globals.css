@@ -1,27 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+}
+@layer base {
+  .section {
+    @apply py-[50px] lg:py-[70px];
+  }
+  .title {
+    @apply text-[36px]  lg:text-[40px] 
+    mb-5
+    md:mb-6;
+  }
+  .subheading {
+    @apply font-thin leading-relaxed text-[15px] lg:text-[20px];
+  }
+  .para {
+    @apply font-thin  lg:text-[14px] leading-loose hover:cursor-pointer
+  }
 }
