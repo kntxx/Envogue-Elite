@@ -20,6 +20,6 @@ body {
     @apply font-thin leading-relaxed text-[15px] lg:text-[20px];
   }
   .para {
-    @apply font-thin  lg:text-[14px] leading-loose hover:cursor-pointer
+    @apply font-thin  lg:text-[14px] leading-loose hover:cursor-pointer;
   }
 }

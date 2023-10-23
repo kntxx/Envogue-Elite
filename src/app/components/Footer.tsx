@@ -30,7 +30,8 @@ const Footer = () => {
               />
             </Link>
             <p className="mt-1 para">
-              123, rue de la Paix <br /> 75001 <br /> Paris France
+              Ed, Isidro Kintanar St,
+              <br /> Argao, <br /> 6021 Cebu
             </p>
           </motion.div>
           <motion.div
@@ -110,7 +111,7 @@ const Footer = () => {
           whileInView={"show"}
           className="text-[12px] md:text-[17px] mt-5 font-thin text-center"
         >
-          Envogue Elite - All rights reserved &#169; 2023
+          Group 1 - All rights reserved &#169; 2023
         </motion.p>
       </div>
     </footer>
