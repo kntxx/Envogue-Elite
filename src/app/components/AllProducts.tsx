@@ -29,14 +29,14 @@ const AllProducts = () => {
               Discover curated elegance for confident expression.
             </motion.p>
           </div>
-          <div className=" mt-6 grid grid-cols-2 lg:grid-cols-4 grid-row md:w-[500px] lg:w-full gap-y-2 gap-x-5 ">
+          <div className=" mt-6 grid grid-cols-2 lg:grid-cols-4 grid-row  md:w-[500px] lg:w-full gap-y-2 gap-x-5 ">
             {allProducts.map((product, index) => (
-              <div key={index} className="flex flex-col items-center ">
+              <div key={index} className="flex flex-col items-center hover:scale-105 transition">
                 <motion.div
                   variants={fadeIn("none", 0)}
                   initial="hidden"
                   whileInView={"show"}
-                  className="hover:scale-110 transition-all p-2 hover:bg-white hover:shadow-2xl  "
+                  className="hover:scale-110 transition-all p-2 bg-white shadow-md  "
                 >
                   <Image
                     alt="Product Image"
@@ -46,10 +46,13 @@ const AllProducts = () => {
                     className=" w-[160px] h-[201px] md:w-[260px] md:h-[326px] lg:w-[305px] lg:h-[375px] mb-2 "
                   />
 
-                  <div className="text-left ">
+                  <div className="text-center ">
                     <p className="mb-2 ">{product.name}</p>
                     <p className="font-thin mb-2">{product.price}</p>
                   </div>
+                  <button className="bg-black text-white p-1 rounded md:p-2 text-[10px] md:text-[15px] active:bg-gray-800">
+                    Add To Cart
+                  </button>
                 </motion.div>
               </div>
             ))}

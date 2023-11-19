@@ -106,22 +106,22 @@ export const allProducts: ProductsImage[] = [
     price: "$100",
   },
   {
-    image: "/product/product1.png",
+    image: "/product/product5.png",
     name: "Lorem Ipsum",
     price: "$100",
   },
   {
-    image: "/product/product2.png",
+    image: "/product/product6.png",
     name: "Lorem Ipsum",
     price: "$100",
   },
   {
-    image: "/product/product3.png",
+    image: "/product/product7.png",
     name: "Lorem Ipsum",
     price: "$100",
   },
   {
-    image: "/product/product4.png",
+    image: "/product/product8.png",
     name: "Lorem Ipsum",
     price: "$100",
   },

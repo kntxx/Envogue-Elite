@@ -47,7 +47,7 @@ const Blog = () => {
                     variants={fadeIn("none", 0.4)}
                     initial="hidden"
                     whileInView={"show"}
-                    className="text-[30px]  max-w-[360px] leading-relaxed mb-2"
+                    className="text-[30px]  max-w-[360px]  mb-2"
                   >
                     {item.title}
                   </motion.h1>
