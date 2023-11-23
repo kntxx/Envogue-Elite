@@ -204,7 +204,7 @@ export const teams: Teamdata[] = [
     instagram: "#",
   },
   {
-    image: "/about/lando.png",
+    image: "/about/lando.PNG",
     name: "Rolando Parilla Jr.",
     title: "Product Designer",
     icon1: CiFacebook,
@@ -213,7 +213,7 @@ export const teams: Teamdata[] = [
     instagram: "#",
   },
   {
-    image: "/about/jm.png",
+    image: "/about/jm.PNG",
     name: "John Mar Alonzo",
     title: "Managing Director",
     icon1: CiFacebook,
@@ -223,7 +223,7 @@ export const teams: Teamdata[] = [
   },
 
   {
-    image: "/about/rrose.png",
+    image: "/about/rrose.PNG",
     name: "Mary Rose Enricoso",
     title: "Operations Manager",
     icon1: CiFacebook,
@@ -232,7 +232,7 @@ export const teams: Teamdata[] = [
     instagram: "#",
   },
   {
-    image: "/about/pearly1.png",
+    image: "/about/pearly1.PNG",
     name: "Pearly Rellon",
     title: "Data Analyst",
     icon1: CiFacebook,
@@ -241,7 +241,7 @@ export const teams: Teamdata[] = [
     instagram: "#",
   },
   {
-    image: "/about/alyza-1.png",
+    image: "/about/alyza-1.PNG",
     name: "Alyza Antopina",
     title: "Finance Manager",
     icon1: CiFacebook,

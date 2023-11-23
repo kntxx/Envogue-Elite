@@ -30,7 +30,7 @@ const Team = () => {
               <br /> We blend creativity and tech to redefine online shopping.
             </motion.p>
           </div>
-          <div className="grid grid-cols-2 lg:grid-cols-3    lg:w-[1050px] w-auto  mt-6">
+          <div className="grid grid-cols-2 lg:grid-cols-3  gap-y-8  lg:w-[1050px] w-auto  mt-6">
             {teams.map((item) => (
               <motion.div
                 variants={fadeIn("none", 0)}
