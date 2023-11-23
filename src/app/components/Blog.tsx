@@ -42,7 +42,7 @@ const Blog = () => {
                     className="w-[320] h-[183] md:w-[420px] md:h-[283px]"
                   />
                 </motion.div>
-                <div className="mt-6 flex flex-col items-center justify-center text-center lg:text-left lg:items-start hover:cursor-pointer mb-4 ">
+                <div className="mt-2 flex flex-col items-center justify-center text-center lg:text-left lg:items-start hover:cursor-pointer mb-4 ">
                   <motion.h1
                     variants={fadeIn("none", 0.4)}
                     initial="hidden"
