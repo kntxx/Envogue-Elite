@@ -29,9 +29,12 @@ const AllProducts = () => {
               Discover curated elegance for confident expression.
             </motion.p>
           </div>
-          <div className=" mt-6 grid grid-cols-2 lg:grid-cols-4 grid-row  md:w-[500px] lg:w-full gap-y-2 gap-x-5 ">
+          <div className=" mt-6 grid grid-cols-2 lg:grid-cols-4 grid-row  md:w-[500px] lg:w-full gap-y-8 gap-x-5 ">
             {allProducts.map((product, index) => (
-              <div key={index} className="flex flex-col items-center hover:scale-105 transition">
+              <div
+                key={index}
+                className="flex flex-col items-center hover:scale-105 transition"
+              >
                 <motion.div
                   variants={fadeIn("none", 0)}
                   initial="hidden"
@@ -43,16 +46,21 @@ const AllProducts = () => {
                     src={product.image}
                     width="500"
                     height="500"
-                    className=" w-[160px] h-[201px] md:w-[260px] md:h-[326px] lg:w-[305px] lg:h-[375px] mb-2 "
+                    className=" w-[160px] h-[201px] md:w-[260px] md:h-[326px] lg:w-[305px] lg:h-[320px] mb-2 "
                   />
 
-                  <div className="text-center ">
-                    <p className="mb-2 ">{product.name}</p>
-                    <p className="font-thin mb-2">{product.price}</p>
+                  <div className="text-left ">
+                    <p className="">{product.name}</p>
+                    <p className="font-thin ">{product.price}</p>
                   </div>
-                  <button className="bg-black text-white p-1 rounded md:p-2 text-[10px] md:text-[15px] active:bg-gray-800">
-                    Add To Cart
-                  </button>
+                  <div className=" ">
+                    <button className="bg-black 
+                     text-white p-1    md:p-2 
+                     text-[10px] md:text-[13px]
+                      active:bg-gray-800">
+                      Add To Cart
+                    </button>
+                  </div>
                 </motion.div>
               </div>
             ))}

@@ -1,27 +1,27 @@
-import About from "./components/About";
 import AllProducts from "./components/AllProducts";
 import Blog from "./components/Blog";
 import Brand from "./components/Brand";
-import Footer from "./components/Footer";
+import PageWrapper from "./page-wrapper";
 import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
+
 import NewArrival from "./components/NewArrival";
-import NewsLetter from "./components/NewsLetter";
+
 import Testimonials from "./components/Testimonials";
+import Navbar from "./components/Navbar";
 
 export default function Home() {
   return (
     <main>
-      <Navbar />
-      <Hero />
-      <Brand />
-      <About />
-      <NewArrival />
-      <AllProducts />
-      <Blog />
-      <Testimonials />
-      <NewsLetter />
-      <Footer />
+      <PageWrapper>
+        <Navbar/>
+        <Hero />
+        <Brand />
+        <NewArrival />
+        <AllProducts />
+        <Blog />
+        <Testimonials />
+     
+      </PageWrapper>
     </main>
   );
 }

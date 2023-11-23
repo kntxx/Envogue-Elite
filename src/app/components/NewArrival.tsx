@@ -7,7 +7,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 
 const NewArrival = () => {
   return (
-    <section className="section min-h-[80vh] lg:min-h-screen flex items-center">
+    <section className="section min-h-[80vh]  flex items-center">
       <div className="container mx-auto ">
         <div className="flex flex-col lg:flex-row relative">
           <div className="flex flex-col  lg:h-[300px] justify-center items-center text-center lg:text-left lg:items-start lg:max-w-[500px]">

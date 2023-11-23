@@ -1,6 +1,10 @@
 import Navbar from "./components/Navbar";
+import PageWrapper from "./page-wrapper";
+
+import Footer from "./components/Footer";
 import "./globals.css";
 import type { Metadata } from "next";
+import NewsLetter from "./components/NewsLetter";
 
 export const metadata: Metadata = {
   title: "Envogue Elite",
@@ -19,7 +23,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-primarywhite">{children}</body>
+      <body className="bg-primarywhite">
+        <PageWrapper>
+          <Navbar />
+          {children}
+          <NewsLetter/>
+          <Footer />
+        </PageWrapper>
+      </body>
     </html>
   );
 }

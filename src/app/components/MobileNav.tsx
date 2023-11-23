@@ -1,13 +1,25 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "./variants";
-import { Link } from "react-scroll/modules";
 import { navbar } from "../constants/data";
+
+import Link from "next/link";
 type MobileNavProps = {
   onItemClick: () => void;
 };
+
 const MobileNav = ({ onItemClick }: MobileNavProps) => {
-  const { link } = navbar;
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleLinkClick = () => {
+
+    setIsOpen(false);
+    
+    onItemClick();
+  };
+
   return (
     <nav className="bg-primarywhite  bg-no-repeat bg-cover bg-center h-full text-primaryblack">
       <motion.ul
@@ -16,20 +28,21 @@ const MobileNav = ({ onItemClick }: MobileNavProps) => {
         whileInView={"show"}
         className="flex flex-col items-center justify-center h-full gap-y-6"
       >
-        {link.map((item, index) => (
-          <Link
-            key={index}
-            to={item.id}
-            spy={true}
-            smooth={true}
-            duration={800}
-            onClick={() => onItemClick()}
-          >
-            <li className="cursor-pointer text-[20px] font-thin border-b">
-              {item.name}
-            </li>
+        <li className="cursor-pointer text-[20px] font-thin border-b">
+          <Link href="/" onClick={handleLinkClick}>
+            Home
+          </Link>{" "}
+        </li>
+        <li className="cursor-pointer text-[20px] font-thin border-b">
+          <Link href="/about" onClick={handleLinkClick}>
+            About
+          </Link>{" "}
+        </li>
+        <li className="cursor-pointer text-[20px] font-thin border-b">
+          <Link href="/contact" onClick={handleLinkClick}>
+            Contact
           </Link>
-        ))}
+        </li>
       </motion.ul>
     </nav>
   );

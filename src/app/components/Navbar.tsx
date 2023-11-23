@@ -1,18 +1,23 @@
 "use client";
 import { motion } from "framer-motion";
 import { fadeIn } from "./variants";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { navbar } from "../constants/data";
 import Image from "next/image";
-import { Link } from "react-scroll/modules";
+import { useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { CiUser, CiSearch, CiShoppingCart } from "react-icons/ci";
 import { CiMenuBurger } from "react-icons/ci";
 import { VscClose } from "react-icons/vsc";
 import MobileNav from "./MobileNav";
+import Link from "next/link";
 
 const Navbar = () => {
+  const router = useRouter();
+  const pathname = usePathname();
+
   const { logoImage, link } = navbar;
-  const [bg, setBg] = useState(false);
+
   const [toggle, setToggle] = useState(false);
 
   const handleClick = () => {
@@ -22,23 +27,9 @@ const Navbar = () => {
   const handleItemClick = () => {
     setToggle(false);
   };
-  useEffect(() => {
-    const handleScroll = () => {
-      setBg(window.scrollY > 50);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   return (
-    <nav
-      className={`${
-        bg ? "bg-primaryblack py-4 lg:py-5" : "bg-none"
-      }  fixed left-0 w-full py-8  z-10 transition-all `}
-    >
+    <nav className="bg-primaryblack py-5  fixed left-0 w-full z-10  ">
       <div className="container mx-auto text-primarywhite ">
         <div className="flex justify-between items-center ">
           <motion.div
@@ -46,7 +37,7 @@ const Navbar = () => {
             initial="hidden"
             whileInView={"show"}
           >
-            <Link to="home" spy={true} smooth={true} duration={800}>
+            <Link href="/">
               <Image
                 src={logoImage}
                 alt="logo image"
@@ -63,22 +54,32 @@ const Navbar = () => {
             className="max-w-auto"
           >
             <ul className="hidden md:flex space-x-11 font-xxthin md:text-[12px] lg:text-[14px] mr-8">
-              {link.map((item, index) => (
-                <li
-                  key={index}
-                  className="font-thin cursor-pointer transition-transform duration-300 hover:scale-110 "
-                >
-                  <Link
-                    to={item.id}
-                    spy={true}
-                    smooth={true}
-                    duration={800}
-                    className="p-2"
-                  >
-                    {item.name}
-                  </Link>
-                </li>
-              ))}
+              <li
+                onClick={() => router.push("/")}
+                className={`font-thin cursor-pointer transition-transform duration-300 hover:scale-110 ${
+                  pathname === "/" ? "border-b-2 border-primarywhite" : ""
+                }`}
+              >
+                Home
+              </li>
+              <li
+                onClick={() => router.push("/about")}
+                className={`font-thin cursor-pointer transition-transform duration-300 hover:scale-110 ${
+                  pathname === "/about" ? "border-b-2 border-primarywhite" : ""
+                }`}
+              >
+                About
+              </li>
+              <li
+                onClick={() => router.push("/contact")}
+                className={`font-thin cursor-pointer transition-transform duration-300 hover:scale-110 ${
+                  pathname === "/contact"
+                    ? "border-b-2 border-primarywhite"
+                    : ""
+                }`}
+              >
+                Contact
+              </li>
             </ul>
           </motion.div>
 

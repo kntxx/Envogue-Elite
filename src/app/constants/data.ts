@@ -1,7 +1,9 @@
 import React from "react";
 import { IconType } from "react-icons";
 import { AiFillCheckCircle } from "react-icons/ai";
-
+import { CiFacebook, CiInstagram } from "react-icons/ci";
+import { FaTruck, FaHeadphones } from "react-icons/fa";
+import { IoShieldCheckmark } from "react-icons/io5";
 interface Nav {
   logoImage: string;
   link: { id: string; name: string }[];
@@ -21,6 +23,10 @@ export const navbar: Nav = {
     {
       id: "products",
       name: "Products",
+    },
+    {
+      id: "contact",
+      name: "Contact",
     },
   ],
 };
@@ -144,7 +150,7 @@ export const blog: Blog[] = [
   },
   {
     image: "/blog/blog2.png",
-    title: "Timeless Wardrobe Essentials Elevate Your Style",
+    title: "Timeless Style, Essential Wardrobe",
     descri:
       "Unveil the timeless appeal of wardrobe  essentials  gracefully hung on hangers. From classic blazers to chic dresses.",
     link: "Read Article",
@@ -178,4 +184,93 @@ export const icons: IconDefinition[] = [
   },
 ];
 
+interface Teamdata {
+  image: string;
+  name: string;
+  title: string;
+  icon1: IconType;
+  icon2: IconType;
+  facebook: string;
+  instagram: string;
+}
+export const teams: Teamdata[] = [
+  {
+    image: "/about/me.png",
+    name: "Kent Joseph Gesoro",
+    title: "Chief Executive Officer (CEO)",
+    icon1: CiFacebook,
+    icon2: CiInstagram,
+    facebook: "#",
+    instagram: "#",
+  },
+  {
+    image: "/about/lando.png",
+    name: "Rolando Parilla Jr.",
+    title: "Product Designer",
+    icon1: CiFacebook,
+    icon2: CiInstagram,
+    facebook: "#",
+    instagram: "#",
+  },
+  {
+    image: "/about/jm.png",
+    name: "John Mar Alonzo",
+    title: "Managing Director",
+    icon1: CiFacebook,
+    icon2: CiInstagram,
+    facebook: "#",
+    instagram: "#",
+  },
 
+  {
+    image: "/about/rrose.png",
+    name: "Mary Rose Enricoso",
+    title: "Operations Manager",
+    icon1: CiFacebook,
+    icon2: CiInstagram,
+    facebook: "#",
+    instagram: "#",
+  },
+  {
+    image: "/about/pearly1.png",
+    name: "Pearly Rellon",
+    title: "Data Analyst",
+    icon1: CiFacebook,
+    icon2: CiInstagram,
+    facebook: "#",
+    instagram: "#",
+  },
+  {
+    image: "/about/alyza-1.png",
+    name: "Alyza Antopina",
+    title: "Finance Manager",
+    icon1: CiFacebook,
+    icon2: CiInstagram,
+    facebook: "#",
+    instagram: "#",
+  },
+];
+
+interface Badgesdata {
+  icon: IconType;
+  title: string;
+  description: string;
+}
+
+export const Badges: Badgesdata[] = [
+  {
+    icon: FaTruck,
+    title: "FREE AND FAST DELIVERY",
+    description: "Free delivery for all orders over $500",
+  },
+  {
+    icon: FaHeadphones,
+    title: "24/7 CUSTOMER SERVICE",
+    description: "Friendly 24/7 customer support",
+  },
+  {
+    icon: IoShieldCheckmark,
+    title: "MONEY BACK GUARANTEE",
+    description: "We return money within 30 days",
+  },
+];
