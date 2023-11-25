@@ -150,14 +150,14 @@ export const blog: Blog[] = [
   },
   {
     image: "/blog/blog2.png",
-    title: "Timeless Style, Essential Wardrobe",
+    title: "Essential Wardrobe",
     descri:
       "Unveil the timeless appeal of wardrobe  essentials  gracefully hung on hangers. From classic blazers to chic dresses.",
     link: "Read Article",
   },
   {
     image: "/blog/blog3.png",
-    title: "Elegance Redefined Timeless Fashion",
+    title: "Elegance Redefined Timeless Fashion
     descri:
       "Embrace the allure of sophistication with our curated collection of timeless fashion.",
     link: "Read Article",
