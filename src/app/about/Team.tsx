@@ -64,6 +64,7 @@ const Team = () => {
                       key={uuidv4()}
                       className="md:text-[20px] lg:text-[20px]"
                       href={item.facebook}
+                      target="_blank"
                     >
                       {" "}
                       {React.createElement(item.icon1)}
@@ -72,6 +73,7 @@ const Team = () => {
                       key={uuidv4()}
                       className="md:text-[20px] lg:text-[22px]"
                       href={item.instagram}
+                      target="_blank"
                     >
                       {" "}
                       {React.createElement(item.icon2)}
