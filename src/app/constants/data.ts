@@ -200,8 +200,8 @@ export const teams: Teamdata[] = [
     title: "Chief Executive Officer (CEO)",
     icon1: CiFacebook,
     icon2: CiInstagram,
-    facebook: "#",
-    instagram: "#",
+    facebook: "https://www.facebook.com/tnek18",
+    instagram: "https://www.instagram.com/kentatixx18",
   },
   {
     image: "/about/lando.PNG",
@@ -209,7 +209,7 @@ export const teams: Teamdata[] = [
     title: "Product Designer",
     icon1: CiFacebook,
     icon2: CiInstagram,
-    facebook: "#",
+    facebook: "https://www.facebook.com/rolando.allirap.3",
     instagram: "#",
   },
   {
@@ -218,8 +218,8 @@ export const teams: Teamdata[] = [
     title: "Managing Director",
     icon1: CiFacebook,
     icon2: CiInstagram,
-    facebook: "#",
-    instagram: "#",
+    facebook: "https://www.facebook.com/profile.php?id=100069950773942",
+    instagram: "https://www.instagram.com/johnmaralonzo_5/",
   },
 
   {
@@ -228,7 +228,7 @@ export const teams: Teamdata[] = [
     title: "Operations Manager",
     icon1: CiFacebook,
     icon2: CiInstagram,
-    facebook: "#",
+    facebook: "https://www.facebook.com/MerottENRICOSO",
     instagram: "#",
   },
   {
@@ -237,7 +237,7 @@ export const teams: Teamdata[] = [
     title: "Data Analyst",
     icon1: CiFacebook,
     icon2: CiInstagram,
-    facebook: "#",
+    facebook: "https://www.facebook.com/pearly.rellon.9",
     instagram: "#",
   },
   {
@@ -246,7 +246,7 @@ export const teams: Teamdata[] = [
     title: "Finance Manager",
     icon1: CiFacebook,
     icon2: CiInstagram,
-    facebook: "#",
+    facebook: "https://www.facebook.com/alyza.antopina.5",
     instagram: "#",
   },
 ];
